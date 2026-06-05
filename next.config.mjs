@@ -10,6 +10,12 @@ const nextConfig = {
     ],
   },
   transpilePackages: ["three"],
+  async rewrites() {
+    return [
+      // Serve the immersive static portfolio at the root
+      { source: "/", destination: "/index.html" },
+    ];
+  },
 };
 
 export default nextConfig;
