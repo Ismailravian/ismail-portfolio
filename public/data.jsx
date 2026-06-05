@@ -1,98 +1,166 @@
-// data.jsx — portfolio content. Loads from /api/portfolio-data when available.
+// data.jsx — portfolio content for M. Ismail
+// Auto-fetches live data from /api/portfolio-data (Supabase) on load.
 
 const PROFILE = {
-  name: "Ismail",
+  name: "M. Ismail",
   handle: "ismailravian",
-  headline: "software engineer · building the web in 3d",
-  bio: "I design and ship modern web experiences. TypeScript by day, GLSL by night. Currently exploring how WebGPU is changing the frontier of browser graphics — and shipping calm, fast interfaces for the people I work with.",
-  email: "ismailravian541@gmail.com",
-  location: "Lahore · UTC+5",
-  status: "Open to new work · 2026",
+  headline: "bs ai student · ai/ml developer · python trainer · hackathon winner",
+  bio: "4th semester BS Artificial Intelligence student at FAST NUCES with hands-on experience in Python, AI/ML, and low-level systems programming. Certified in Generative AI and experienced as a professional Python Trainer. Actively engaged in AI research — building intelligent systems that solve real-world problems.",
+  email: "ismailkamboh541@gmail.com",
+  phone: "0336-8051413",
+  location: "Lahore, Pakistan",
+  status: "Open to internships & collaborations · 2026",
   github: "github.com/Ismailravian",
-  linkedin: "linkedin.com/in/your-handle",
-  twitter: "x.com/ismailravian",
+  linkedin: "linkedin.com/in/muhammad-ismail-0541",
+  twitter: "",
   experience: [
     {
-      when: "2024 — now",
-      role: "Frontend Engineer",
-      org: "Acme Studio",
-      desc: "Design-engineering for marketing sites and dashboards. Custom Three.js scenes, design systems, and a lot of late-night shader tuning.",
+      when: "Mar 2026",
+      role: "AI Intern",
+      org: "CodeAlpha",
+      desc: "Performed data preprocessing and exploratory data analysis using Python. Built and evaluated regression and classification models using Scikit-learn. Extracted actionable insights from datasets to solve real-world problems.",
     },
     {
-      when: "2020 — 2024",
-      role: "B.Sc. Computer Science",
-      org: "University",
-      desc: "Focused on graphics, distributed systems, and shipping side-projects nobody asked for.",
+      when: "2024 — now",
+      role: "BS Artificial Intelligence",
+      org: "FAST-NUCES",
+      desc: "4th semester. Focused on AI/ML, low-level systems programming, and building intelligent systems. Hackathon winner — Build with AI (GDGOC FAST Nuces, Team: Think3x).",
+    },
+    {
+      when: "Graduated 2024",
+      role: "Intermediate (Pre-Engineering)",
+      org: "GCU Lahore",
+      desc: "Pre-engineering track with strong foundation in mathematics and sciences.",
     },
   ],
   skills: [
-    { name: "TypeScript",          lvl: "fluent" },
-    { name: "React / Next.js",     lvl: "fluent" },
-    { name: "Three.js / WebGL",    lvl: "fluent" },
-    { name: "GLSL shaders",        lvl: "shipping" },
-    { name: "Postgres / Supabase", lvl: "shipping" },
-    { name: "Tailwind / CSS",      lvl: "fluent" },
-    { name: "Node.js",             lvl: "shipping" },
-    { name: "WebGPU",              lvl: "learning" },
+    { name: "Python",          lvl: "fluent"   },
+    { name: "AI / ML",         lvl: "fluent"   },
+    { name: "Scikit-learn",    lvl: "fluent"   },
+    { name: "NumPy / Pandas",  lvl: "fluent"   },
+    { name: "C++",             lvl: "shipping" },
+    { name: "x86 Assembly",    lvl: "shipping" },
+    { name: "SQL",             lvl: "shipping" },
+    { name: "Flask",           lvl: "shipping" },
+    { name: "OpenCV",          lvl: "shipping" },
+    { name: "Generative AI",   lvl: "learning" },
+  ],
+  achievements: [
+    "🏆 Winner — Build with AI Hackathon, GDGOC FAST Nuces Chiniot-Faisalabad (Team: Think3x)",
+    "📜 Certified in Generative AI",
+    "🎓 Recognized for strong performance in systems programming & database coursework",
+    "🎤 Professional Python Trainer",
   ],
 };
 
 const PROJECTS = [
   {
-    slug: "neon-dashboard",
+    slug: "language-translation-tool",
     idx: "01",
-    title: "Neon Dashboard",
-    tagline: "Realtime analytics with sub-100ms WebSocket feeds.",
-    year: "2025",
-    status: "shipped",
-    role: "lead engineer",
-    tech: ["Next.js", "WebSockets", "Three.js", "Postgres"],
-    featured: true,
-    description: [
-      "A realtime analytics dashboard with custom charts, WebSocket data feeds, and a 3D KPI scene built in React Three Fiber.",
-      "Built on Next.js 15 with a custom WebSocket router. Charts rendered to canvas; the 3D scene is wired to the same state store so it never drifts from the numbers.",
-    ],
-    links: [
-      { label: "github", href: "https://github.com/Ismailravian" },
-    ],
-  },
-  {
-    slug: "voxel-portfolio",
-    idx: "02",
-    title: "Voxel Portfolio",
-    tagline: "A walkable voxel world rendered with custom GLSL.",
+    title: "Language Translation Tool",
+    tagline: "Neural-based system for translating text across multiple languages.",
     year: "2025",
     status: "live",
     role: "solo",
-    tech: ["Three.js", "GLSL", "React"],
+    tech: ["Python", "Flask", "JavaScript", "HTML/CSS"],
     featured: true,
     description: [
-      "Immersive WebGL portfolio with a navigable voxel scene, custom shaders, and post-processing bloom.",
-      "Built entirely in Three.js with custom GLSL shaders for the voxel rendering and ambient occlusion.",
+      "A Flask-based translation tool with clean separation of concerns. The frontend manages user input and dynamic language selection via JavaScript, while the Python backend handles requests through a dedicated translation API.",
+      "Organized into static, templates, and translator/ directories for easy scalability and maintenance.",
+    ],
+    links: [
+      { label: "github", href: "https://github.com/Ismailravian/-Language_Translation_Tool" },
+    ],
+  },
+  {
+    slug: "faq-chatbot",
+    idx: "02",
+    title: "FAQ Chatbot",
+    tagline: "Multi-platform NLP chatbot for university queries with 95%+ accuracy.",
+    year: "2025",
+    status: "open source",
+    role: "solo",
+    tech: ["Python", "Flask", "Scikit-learn", "NLP", "Cosine Similarity"],
+    featured: true,
+    description: [
+      "University FAQ Chatbot: a multi-platform (Web / GUI / CLI) NLP application. Built with Python, Flask, and Scikit-learn.",
+      "Features a robust preprocessing pipeline and confidence-based matching using Cosine Similarity. Designed to streamline campus queries while logging knowledge-base gaps for future training.",
+    ],
+    links: [
+      { label: "github", href: "https://github.com/Ismailravian/Chatbot_for_FAQs-" },
+    ],
+  },
+  {
+    slug: "object-detection",
+    idx: "03",
+    title: "Object Detection & Tracking",
+    tagline: "Real-time computer vision system to detect and track objects in video streams.",
+    year: "2025",
+    status: "shipped",
+    role: "solo",
+    tech: ["Python", "OpenCV", "Deep Learning"],
+    featured: true,
+    description: [
+      "Real-time computer vision system built with Python and OpenCV to detect and track multiple objects across live video streams.",
+      "Leverages deep learning models for accurate object localisation and persistent tracking across frames.",
+    ],
+    links: [
+      { label: "github", href: "https://github.com/Ismailravian/Object_Detection_and_Tracking" },
+    ],
+  },
+  {
+    slug: "house-price-prediction",
+    idx: "04",
+    title: "House Price Prediction",
+    tagline: "Regression model with 95%+ accuracy via feature engineering.",
+    year: "2024",
+    status: "shipped",
+    role: "solo",
+    tech: ["Python", "Scikit-learn", "NumPy", "Pandas"],
+    featured: false,
+    description: [
+      "Created a regression model using Scikit-learn with 95%+ accuracy through careful feature engineering and hyperparameter tuning.",
+      "Full EDA pipeline: data cleaning, visualisation, feature selection, model training, and evaluation.",
     ],
     links: [],
   },
   {
-    slug: "ai-notes",
-    idx: "03",
-    title: "AI Notes",
-    tagline: "Local-first notes app with semantic search.",
-    year: "2024",
+    slug: "sudoku-csp",
+    idx: "05",
+    title: "Sudoku CSP Solver",
+    tagline: "Solves all sudoku levels using AC-3, backtracking, and MRV heuristic.",
+    year: "2025",
     status: "open source",
     role: "solo",
-    tech: ["TypeScript", "SQLite", "Embeddings"],
+    tech: ["Python", "CSP", "AC-3", "Backtracking"],
     featured: false,
     description: [
-      "A notes app with semantic search powered by embeddings, fully local-first with sync, plus a slash-command palette.",
+      "Python Sudoku solver using Constraint Satisfaction Problem techniques: AC-3 arc consistency, backtracking search, forward checking, and the Minimum Remaining Values (MRV) heuristic.",
+      "Solves all difficulty levels and outputs the solution with performance statistics.",
     ],
     links: [
-      { label: "github", href: "https://github.com/Ismailravian" },
+      { label: "github", href: "https://github.com/Ismailravian/sudoku-csp" },
     ],
+  },
+  {
+    slug: "booking-management-cpp",
+    idx: "06",
+    title: "Booking Management System",
+    tagline: "C++ desktop application with OOP and persistent file storage.",
+    year: "2024",
+    status: "shipped",
+    role: "solo",
+    tech: ["C++", "OOP", "File I/O"],
+    featured: false,
+    description: [
+      "Desktop booking management application built in C++ using Object-Oriented Programming principles.",
+      "Features persistent file handling so all bookings survive application restarts.",
+    ],
+    links: [],
   },
 ];
 
 // ── Live data from Supabase via Next.js API ───────────────────────────────
-// Fetch once on load; update window variables so React re-renders.
 async function loadLiveData() {
   try {
     const res = await fetch('/api/portfolio-data', { cache: 'no-store' });
@@ -100,16 +168,17 @@ async function loadLiveData() {
     const data = await res.json();
 
     if (data.profile) {
+      const p = data.profile;
       Object.assign(window.__PROFILE, {
-        name:       data.profile.name       || window.__PROFILE.name,
-        headline:   data.profile.headline   || window.__PROFILE.headline,
-        bio:        data.profile.bio        || window.__PROFILE.bio,
-        email:      data.profile.email      || window.__PROFILE.email,
-        location:   data.profile.location   || window.__PROFILE.location,
-        github:     data.profile.github_url   ? data.profile.github_url.replace('https://', '') : window.__PROFILE.github,
-        linkedin:   data.profile.linkedin_url ? data.profile.linkedin_url.replace('https://', '') : window.__PROFILE.linkedin,
-        skills:     data.profile.skills?.map(s => ({ name: s, lvl: 'fluent' })) || window.__PROFILE.skills,
-        experience: data.profile.experience?.map(e => ({
+        name:       p.name        || window.__PROFILE.name,
+        headline:   p.headline    || window.__PROFILE.headline,
+        bio:        p.bio         || window.__PROFILE.bio,
+        email:      p.email       || window.__PROFILE.email,
+        location:   p.location    || window.__PROFILE.location,
+        github:     p.github_url    ? p.github_url.replace('https://','')    : window.__PROFILE.github,
+        linkedin:   p.linkedin_url  ? p.linkedin_url.replace('https://','')  : window.__PROFILE.linkedin,
+        skills:     p.skills?.map(s => ({ name: s, lvl: 'fluent' })) || window.__PROFILE.skills,
+        experience: p.experience?.map(e => ({
           when: e.end ? `${e.start} — ${e.end}` : `${e.start} — now`,
           role: e.role, org: e.company, desc: e.summary,
         })) || window.__PROFILE.experience,
@@ -129,18 +198,17 @@ async function loadLiveData() {
         featured:    p.featured,
         description: p.description ? p.description.split('\n\n').filter(Boolean) : [p.tagline],
         links: [
-          p.github_url  && { label: 'github',  href: p.github_url },
-          p.vercel_url  && { label: 'vercel',  href: p.vercel_url },
-          p.demo_url    && { label: 'demo',    href: p.demo_url },
+          p.github_url   && { label: 'github',   href: p.github_url },
+          p.vercel_url   && { label: 'vercel',   href: p.vercel_url },
+          p.demo_url     && { label: 'demo',     href: p.demo_url },
           p.linkedin_url && { label: 'linkedin', href: p.linkedin_url },
         ].filter(Boolean),
       }));
     }
 
-    // Signal app to re-render with fresh data
     window.dispatchEvent(new CustomEvent('portfolio-data-loaded'));
-  } catch (e) {
-    console.log('Live data unavailable, using defaults.');
+  } catch {
+    // Supabase not configured — using defaults above
   }
 }
 
